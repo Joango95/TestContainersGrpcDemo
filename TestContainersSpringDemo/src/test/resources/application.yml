@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: TestContainersSpringDemo
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/testContainersDemo
+    username: postgres
+    password: postgres
+
+grpc:
+  enable-reflection: true
+  port: 5051
+
+management:
+  external-service:
+    host: localhost
+    port: 5052
+

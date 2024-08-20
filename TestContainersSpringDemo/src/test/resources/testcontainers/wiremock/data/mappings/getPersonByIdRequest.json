@@ -1,0 +1,10 @@
+{
+  "request" : {
+    "method" : "POST",
+    "url" : "/com.joango.services.ExternalServiceCommands/GetPersonById"
+  },
+  "response" : {
+    "status" : 400,
+    "jsonBody" : { "code": 2, "message": "Person not found", "person": null }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/com.joango.services.ExternalServiceCommands/CreateAddressBook"
+  },
+
+  "response": {
+    "status": 200,
+    "body": "{\"addressBook\": {{jsonPath request.body '$.addressBook'}}, \"code\": \"1\", \"message\": \"AddressBook created successfully\"}",
+    "transformers": ["response-template"]
+  }
+}

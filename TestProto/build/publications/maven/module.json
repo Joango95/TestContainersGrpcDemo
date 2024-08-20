@@ -1,0 +1,108 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.joango",
+    "module": "TestProto",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "TestProto-0.0.1.jar",
+          "url": "TestProto-0.0.1.jar",
+          "size": 185437,
+          "sha512": "fc565bfdf3fd8fb74de9631de6494f46ba98c8a17f266d88930da0ed8c695d520c247346db92b943c4ee110bb0ecfdbe5be33762052053e42f766a9b40d90317",
+          "sha256": "f34705d849d4a52759cf8c82453979f0f3cb12ccec2f205a6f52cc573e8768ed",
+          "sha1": "6c2177a009890abe6a1539819a3dd8b29edd34ea",
+          "md5": "48c9fc749b0363d9b8bc85640ce266db"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.9.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.22"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.25.0"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-kotlin-stub",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "io.grpc",
+          "module": "grpc-protobuf",
+          "version": {
+            "requires": "1.59.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "TestProto-0.0.1.jar",
+          "url": "TestProto-0.0.1.jar",
+          "size": 185437,
+          "sha512": "fc565bfdf3fd8fb74de9631de6494f46ba98c8a17f266d88930da0ed8c695d520c247346db92b943c4ee110bb0ecfdbe5be33762052053e42f766a9b40d90317",
+          "sha256": "f34705d849d4a52759cf8c82453979f0f3cb12ccec2f205a6f52cc573e8768ed",
+          "sha1": "6c2177a009890abe6a1539819a3dd8b29edd34ea",
+          "md5": "48c9fc749b0363d9b8bc85640ce266db"
+        }
+      ]
+    }
+  ]
+}

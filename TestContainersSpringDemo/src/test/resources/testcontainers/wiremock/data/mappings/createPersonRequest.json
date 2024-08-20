@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "url" : "/com.joango.services.ExternalServiceCommands/CreatePerson"
+  },
+
+  "response": {
+    "status": 200,
+    "body": "{\"person\": {{jsonPath request.body '$.person'}}, \"code\": \"1\", \"message\": \"Person created successfully\"}",
+    "transformers": ["response-template"]
+  }
+}

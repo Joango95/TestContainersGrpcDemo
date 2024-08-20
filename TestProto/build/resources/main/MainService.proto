@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "model/PersonDTO.proto";
+import "model/AddressBookDTO.proto";
+import "shared/enums.proto";
+
+package com.joango.services;
+option java_package = "com.joango.services";
+option java_multiple_files = true;
+
+service MainServiceCommands {
+  rpc ProcessAddressBook(ProcessAddressBookCommand) returns (ProcessAddressBookResponse);
+}
+
+message ProcessAddressBookCommand {
+  string id = 1;
+  AddressBookDTO addressBook = 2;
+}
+
+message ProcessAddressBookResponse {
+  ResponseCode code = 1;
+  string message = 2;
+}

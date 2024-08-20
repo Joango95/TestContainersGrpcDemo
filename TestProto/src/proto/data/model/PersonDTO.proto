@@ -1,0 +1,14 @@
+syntax = "proto3";
+import "model/PhoneNumberDTO.proto";
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.joango";
+option java_multiple_files = true;
+
+message PersonDTO {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+  repeated PhoneNumberDTO phones = 4;
+  google.protobuf.Timestamp last_updated = 5;
+}

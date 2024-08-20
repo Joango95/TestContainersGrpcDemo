@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "model/PersonDTO.proto";
+import "model/AddressBookDTO.proto";
+import "shared/enums.proto";
+
+package com.joango.services;
+option java_package = "com.joango.services";
+option java_multiple_files = true;
+
+service ExternalServiceCommands {
+  rpc CreatePerson(CreatePersonCommand) returns (CreatePersonResponse);
+  rpc CreateAddressBook(CreateAddressBookCommand) returns (CreateAddressBookResponse);
+  rpc GetPersonById(EntityId) returns (GetPersonResponse);
+}
+
+message CreatePersonCommand {
+  string id = 1;
+  PersonDTO person = 2;
+}
+
+message CreateAddressBookCommand {
+  string id = 1;
+  AddressBookDTO addressBook = 2;
+}
+
+message CreatePersonResponse {
+  PersonDTO person = 1;
+  ResponseCode code = 2;
+  string message = 3;
+}
+
+message CreateAddressBookResponse {
+  AddressBookDTO addressBook = 1;
+  ResponseCode code = 2;
+  string message = 3;
+}
+
+message GetPersonResponse {
+  ResponseCode code = 1;
+  string message = 2;
+  optional PersonDTO person = 3;
+}
+
+message EntityId{
+  string id = 1;
+}
